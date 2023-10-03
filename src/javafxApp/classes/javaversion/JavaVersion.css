@@ -1,0 +1,13 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 2023/10/03, 17:23:09
+    Author     : jp13389210
+*/
+
+.label {
+    -fx-font-size: 16pt;
+    -fx-padding: 5 10 5 10;
+}
