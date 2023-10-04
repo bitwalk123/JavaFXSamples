@@ -12,9 +12,9 @@ public class SampleRadioButton extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception {
-        RadioButton rb_a = new RadioButton("CheckBox A");
-        RadioButton rb_b = new RadioButton("CheckBox B");
-        RadioButton rb_c = new RadioButton("CheckBox C");
+        RadioButton rb_a = new RadioButton("RadioButton A");
+        RadioButton rb_b = new RadioButton("RadioButton B");
+        RadioButton rb_c = new RadioButton("RadioButton C");
 
         ToggleGroup group = new ToggleGroup();
         rb_a.setToggleGroup(group);
@@ -27,7 +27,7 @@ public class SampleRadioButton extends Application {
         vbox.getChildren().add(rb_b);
         vbox.getChildren().add(rb_c);
 
-        primaryStage.setTitle("CheckButton example");
+        primaryStage.setTitle("RadioButton example");
         primaryStage.setScene(new Scene(vbox));
         primaryStage.show();
     }

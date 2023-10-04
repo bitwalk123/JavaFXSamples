@@ -6,7 +6,7 @@ import javafx.scene.control.Alert;
 import javafx.scene.control.Alert.AlertType;
 import javafx.scene.control.CheckBox;
 
-public class SampleCheckButtonEvent implements EventHandler<ActionEvent> {
+public class SampleCheckBoxEvent implements EventHandler<ActionEvent> {
 
     @Override
     public void handle(ActionEvent event) {

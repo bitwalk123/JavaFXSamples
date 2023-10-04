@@ -15,16 +15,16 @@ public class SampleCheckBox extends Application {
         CheckBox cb_b = new CheckBox("CheckBox B");
         CheckBox cb_c = new CheckBox("CheckBox C");
 
-        cb_a.setOnAction(new SampleCheckButtonEvent());
-        cb_b.setOnAction(new SampleCheckButtonEvent());
-        cb_c.setOnAction(new SampleCheckButtonEvent());
+        cb_a.setOnAction(new SampleCheckBoxEvent());
+        cb_b.setOnAction(new SampleCheckBoxEvent());
+        cb_c.setOnAction(new SampleCheckBoxEvent());
 
         VBox vbox = new VBox();
         vbox.getChildren().add(cb_a);
         vbox.getChildren().add(cb_b);
         vbox.getChildren().add(cb_c);
 
-        primaryStage.setTitle("CheckButton example");
+        primaryStage.setTitle("CheckBox example");
         primaryStage.setScene(new Scene(vbox));
         primaryStage.show();
     }
