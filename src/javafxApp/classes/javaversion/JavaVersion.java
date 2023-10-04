@@ -41,10 +41,6 @@ public class JavaVersion extends Application {
         lab12.setMaxWidth(300);
         gridPane.add(lab12, 1, 2);
 
-        for (int j = 0; j < 2; j++) {
-            ColumnConstraints cc = new ColumnConstraints();
-            gridPane.getColumnConstraints().add(cc);
-        }
         Scene scene = new Scene(gridPane);
         scene.getStylesheets().add(getClass().getResource("JavaVersion.css").toExternalForm());
 
