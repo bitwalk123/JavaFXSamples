@@ -9,6 +9,10 @@ import javafx.stage.Stage;
 
 public class SampleButton extends Application {
 
+    public static void main(String[] args) {
+        launch(args);
+    }
+
     @Override
     public void start(Stage primaryStage) throws Exception {
         Button but = new Button("ボタン");
@@ -26,7 +30,4 @@ public class SampleButton extends Application {
         primaryStage.show();
     }
 
-    public static void main(String[] args) {
-        launch(args);
-    }
 }

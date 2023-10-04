@@ -11,6 +11,10 @@ import javafx.stage.Stage;
 
 public class SampleRadioButton extends Application {
 
+    public static void main(String[] args) {
+        launch(args);
+    }
+
     @Override
     public void start(Stage primaryStage) throws Exception {
         RadioButton rb_a = new RadioButton("ラジオボタンＡ");
@@ -34,10 +38,6 @@ public class SampleRadioButton extends Application {
         primaryStage.setHeight(200);
         primaryStage.setScene(new Scene(vbox));
         primaryStage.show();
-    }
-
-    public static void main(String[] args) {
-        launch(args);
     }
 
 }

@@ -10,6 +10,10 @@ import javafx.stage.Stage;
 
 public class SampleCheckBox extends Application {
 
+    public static void main(String[] args) {
+        launch(args);
+    }
+
     @Override
     public void start(Stage primaryStage) throws Exception {
         CheckBox cb_a = new CheckBox("チェックボックスＡ");
@@ -31,10 +35,6 @@ public class SampleCheckBox extends Application {
         primaryStage.setHeight(200);
         primaryStage.setScene(new Scene(vbox));
         primaryStage.show();
-    }
-
-    public static void main(String[] args) {
-        launch(args);
     }
 
 }
