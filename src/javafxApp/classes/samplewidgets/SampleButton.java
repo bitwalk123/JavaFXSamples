@@ -1,4 +1,4 @@
-package samplebutton;
+package samplewidgets;
 
 import javafx.application.Application;
 import javafx.scene.Scene;
