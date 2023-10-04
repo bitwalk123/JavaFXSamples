@@ -27,9 +27,7 @@ public class SampleRadioButton extends Application {
         vbox.setAlignment(Pos.CENTER);
         vbox.setSpacing(10);
 
-        vbox.getChildren().add(rb_a);
-        vbox.getChildren().add(rb_b);
-        vbox.getChildren().add(rb_c);
+        vbox.getChildren().addAll(rb_a, rb_b, rb_c);
 
         primaryStage.setTitle("RadioButton example");
         primaryStage.setWidth(200);

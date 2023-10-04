@@ -24,9 +24,7 @@ public class SampleCheckBox extends Application {
         vbox.setAlignment(Pos.CENTER);
         vbox.setSpacing(10);
 
-        vbox.getChildren().add(cb_a);
-        vbox.getChildren().add(cb_b);
-        vbox.getChildren().add(cb_c);
+        vbox.getChildren().addAll(cb_a, cb_b, cb_c);
 
         primaryStage.setTitle("CheckBox example");
         primaryStage.setWidth(200);
