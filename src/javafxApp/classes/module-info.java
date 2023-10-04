@@ -7,4 +7,5 @@ module javafxApp {
     requires javafx.controls;
     
     exports javaversion;
+    exports samplebutton;
 }
