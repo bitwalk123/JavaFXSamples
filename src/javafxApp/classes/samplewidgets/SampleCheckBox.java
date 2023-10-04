@@ -2,6 +2,7 @@ package samplewidgets;
 
 import javafx.application.Application;
 import static javafx.application.Application.launch;
+import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.control.CheckBox;
 import javafx.scene.layout.VBox;
@@ -11,20 +12,25 @@ public class SampleCheckBox extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception {
-        CheckBox cb_a = new CheckBox("CheckBox A");
-        CheckBox cb_b = new CheckBox("CheckBox B");
-        CheckBox cb_c = new CheckBox("CheckBox C");
+        CheckBox cb_a = new CheckBox("チェックボックスＡ");
+        CheckBox cb_b = new CheckBox("チェックボックスＢ");
+        CheckBox cb_c = new CheckBox("チェックボックスＣ");
 
         cb_a.setOnAction(new SampleCheckBoxEvent());
         cb_b.setOnAction(new SampleCheckBoxEvent());
         cb_c.setOnAction(new SampleCheckBoxEvent());
 
         VBox vbox = new VBox();
+        vbox.setAlignment(Pos.CENTER);
+        vbox.setSpacing(10);
+
         vbox.getChildren().add(cb_a);
         vbox.getChildren().add(cb_b);
         vbox.getChildren().add(cb_c);
 
         primaryStage.setTitle("CheckBox example");
+        primaryStage.setWidth(200);
+        primaryStage.setHeight(200);
         primaryStage.setScene(new Scene(vbox));
         primaryStage.show();
     }
